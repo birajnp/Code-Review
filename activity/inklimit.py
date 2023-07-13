@@ -2,7 +2,6 @@
 import sys
 import progressbar
 import numpy as np
-from tifffile import imread, imwrite
 from PIL import Image
 
 
@@ -62,7 +61,7 @@ if __name__ == "__main__":
     ink_limiter = None
     infilename = sys.argv[1]
     outfilename = sys.argv[2]
-    inimg = imread(infilename)
+    inimg = Image.open(infilename, "r")
     arr = np.asarray(inimg)
     outarr = np.copy(arr)
     for x in progressbar.progressbar(range(arr.shape[0])):
@@ -76,4 +75,5 @@ if __name__ == "__main__":
     total_pixels = arr.shape[0] * arr.shape[1]
     print(f"{pixels_limited / total_pixels * 100.:.2f}"
           f"% of pixels were limited using {ink_limiter_name}.")
-    imwrite(outfilename, outarr, compression="deflate")
+    outimg = Image.fromarray(outarr, mode="CMYK")
+    outimg.save(outfilename, compression="tiff_deflate")
