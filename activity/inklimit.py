@@ -2,6 +2,7 @@
 import sys
 import progressbar
 import numpy as np
+from tifffile import imread, imwrite
 from PIL import Image
 
 
@@ -42,7 +43,8 @@ class InkLimitBase:
 
 # TODO:  Implement your Ink Limiter class here, derived from InkLimitBase
 # You should mainly need to write an apply() function that goes through the
-# pixels in the val array applying your ink limiting method
+# pixels in the val array applying your ink limiting method. It should
+# also update self._pixels_limited if it makes a change.
 
 
 def print_help():
@@ -60,7 +62,7 @@ if __name__ == "__main__":
     ink_limiter = None
     infilename = sys.argv[1]
     outfilename = sys.argv[2]
-    inimg = Image.open(infilename, "r")
+    inimg = imread(infilename)
     arr = np.asarray(inimg)
     outarr = np.copy(arr)
     for x in progressbar.progressbar(range(arr.shape[0])):
@@ -74,5 +76,4 @@ if __name__ == "__main__":
     total_pixels = arr.shape[0] * arr.shape[1]
     print(f"{pixels_limited / total_pixels * 100.:.2f}"
           f"% of pixels were limited using {ink_limiter_name}.")
-    outimg = Image.fromarray(outarr, mode="CMYK")
-    outimg.save(outfilename, compression="tiff_deflate")
+    imwrite(outfilename, outarr, compression="deflate")
