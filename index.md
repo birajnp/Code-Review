@@ -3,15 +3,12 @@ layout: lesson
 root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
-FIXME: home page introduction
+In this module, you will learn about collaborative construction techniques that help identify and prevent errors in your code. 
 
-<!-- this is an html comment -->
-
-{% comment %} This is a comment in Liquid {% endcomment %}
+Collaborative construction techniques are a much better way of finding software defects than testing and debugging.
 
 > ## Prerequisites
 >
-> FIXME
+> * None
 {: .prereq}
 
-{% include links.md %}
