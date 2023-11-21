@@ -12,7 +12,7 @@ keypoints:
 
 ## Code Review Activity
 * Join together in three (or two) pairs
-* Choose whihc pair's code changes you will be reviewing
+* Choose which pair's code changes you will be reviewing
 * Run flake8 or pylint on the inklimit.py file from the pair programming activity.
     * ```flake8 inklimit.py```
     * Run ```pip3 install flake8``` or ```pip3 install pylint``` if needed
