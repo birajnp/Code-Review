@@ -122,7 +122,7 @@ Practically, follow these suggestions:
 like "you should have ..." with "we should consider ...".  In the latter version
 you are taking partial ownership (we) and providing a suggestion instead of a
 command.  You can remove the subject entirely: "Consider ..." or make a question
-"What about ...".  In any case, you change focus from the actor "you" to the
+"What about ...".  In any case, you change focus from the actor, "you", to the
 action.
 - Be polite.  Instead of saying "It's stupid to use this algorithm" give the
 reasons why an alternative would be better "When the sample size is above X,
@@ -135,7 +135,7 @@ a snippet of how the code will look.  But also don't just highlight the region
 and give the code!  Remember sharing knowledge is an important part of reviews.
 Explain that f-strings are generally faster and easier to read.  As a reviewee,
 don't just accept code snippets.  Make sure you understand what the new code does
-and why it may be a better option.
+and why it may be a better option.  This may require some independent research.
 - Give feedback, not commands.  All of your feedback is optional and it's helpful
 to the reviewee to have reviews written as such.  Instead of "Rename this class
 to X" say "Can we rename this class to X?  I think it...".  In the dialog that
@@ -153,7 +153,7 @@ to disagree.
 
 ## Summary
 Collaborative Construction is a heterogeneous topic that is important throughout
-project lifetimes and has many different goals.  The mechanics of review are
+project lifetimes and has many different goals.  The mechanics of reviews are
 separate from what to review.  Think of code reviews like editing a manuscript to
 get into the right frame of mind and always remember the other developer is
 a person. Your relationship may last several years or just this PR, but they
