@@ -139,5 +139,5 @@ options your program may handle.
 Copyright (c) 2022 by the California Institute of Technology.
 All rights reserved.
 
-Test image is from the [Pexels free image website](https://www.pexels.com/photo/portriat-of-a-woman-in-a-dress-lying-in-a-meadow-12652637/).  Original photo taken by Anna Panchenko.
+Test image is from the [Pexels free image website](https://www.pexels.com/photo/cup-of-coffee-on-a-wooden-table-2318005/).  Original photo taken by Ryan Horn.
 

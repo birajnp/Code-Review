@@ -1,6 +1,5 @@
 # Ink limit module
 import sys
-import progressbar
 import numpy as np
 from PIL import Image
 
@@ -64,11 +63,11 @@ if __name__ == "__main__":
     inimg = Image.open(infilename, "r")
     arr = np.asarray(inimg)
     outarr = np.copy(arr)
-    for x in progressbar.progressbar(range(arr.shape[0])):
+    print("Applying ink limiting algorithm...")
+    for x in range(arr.shape[0]):
         for y in range(arr.shape[1]):
             if ink_limiter:
                 outarr[x][y] = ink_limiter.apply(arr[x][y])
-        sys.stdout.flush()
     print("done!")
     pixels_limited = ink_limiter.pixels_limited() if ink_limiter else 0
     ink_limiter_name = ink_limiter.get_name() if ink_limiter else "(none)"
