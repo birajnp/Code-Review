@@ -3,11 +3,14 @@ title: "Best Practices"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- How fast should you review code?
+- How do you decide what should be reviewed?
 objectives:
-- "First learning objective. (FIXME)"
+- "Learn about best practices in code review"
+- "Understand the importance of static analysis tools"
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- Review no faster than 500 lines per hour
+- Decide on a checklist for a project and use it during a review
 ---
 
 ## Best Practices for Code Reviews
