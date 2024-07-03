@@ -113,6 +113,7 @@ issues, etc.
 > * Palantir – [Code Review Best Practices](https://blog.palantir.com/code-review-best-practices-19e02780015f)
 >   * An excellent and detailed guide about code reviews
 > * StackOverflow - [How to Make Good Code Reviews Better](https://stackoverflow.blog/2019/09/30/how-to-make-good-code-reviews-better/)
+>
 > These are also excellent articles:
 > * Atlassian – [Why code reviews matter (and actually save time!)](https://www.atlassian.com/agile/software-development/code-reviews)
 >   * Discusses code reviews in the context of agile development methodologies

@@ -14,11 +14,11 @@ keypoints:
 ---
 
 # Introduction to Pair Programming
-**Pair programming** (a.k.a. **pairing**) is an increasingly popular technique used in software development
+**Pair programming** (a.k.a. **pairing**) is an increasingly popular technique used in software development.
 It addresses the “high cost, low payback” feeling of being a code reviewer by having two developers work together actively, to write a feature and its tests.
 
 When pair programming, there are two roles:
-* The Driver - the one who actually controls the keyboard and the mouse, and writes the code while talking describing their approach, asking questions about potential issues or confusing details.
+* The Driver - the one who actually controls the keyboard and the mouse, and writes the code while talking/describing their approach, asking questions about potential issues or confusing details.
     * This is described as "programming out loud"
 * The Navigator - observes what the driver is doing, asking/answering questions, evaluating the work, pointing out potential pitfalls, etc.
 
@@ -48,7 +48,9 @@ This is typically because:
 > While pair-programming, the driver will explain the code line by line while substituting the rubber-duck for the navigator, experiencing a similar effect.
 {: .callout}
 
-Assuming that pair programming is generally this effective, the time-savings in future debugging and maintenance costs, more than compensates for the slight increase in development costs
+Assuming that pair programming is generally this effective, the time-savings in
+future debugging and maintenance costs more than compensates for the slight
+increase in development costs.
 
 Remember, the longer a defect is undetected, the more costly it is to fix. 
 Pair-programming tends to detect and resolve defects at the earliest possible moment, before code is even included in a commit to a repository.
@@ -93,7 +95,7 @@ Other practices to avoid (in a larger team setting):
 * The participants have unresolvable personality conflicts 
     * This is rare, but it happens
 
-Also remember, that pair-programming is not fix-all solution. 
+Also remember, that pair-programming is not a fix-all solution. 
 Not every part of a program warrants pairing.
 For example, two experts working on simple, well-understood tasks will likely work faster individually than if they are pairing.
 Pairing achieves the greatest benefits when:

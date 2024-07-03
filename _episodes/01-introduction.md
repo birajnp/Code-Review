@@ -21,7 +21,7 @@ keypoints:
   most often mean at the level of an individual pull request.
 ---
 
-# Collaborative Construction and Code Review
+# Collaborative Construction
 
 ## Introduction
 Testing and debugging are not the best way to find software defects. 
@@ -73,6 +73,13 @@ teams that also contain novice developers.  Some other benefits include:
 - Reviewers can suggest better designs, refactorings, or other improvements
 - Reviewers can verify that the code has sufficient test-automation
 
+### Pair Programming and Code Review
+With such a vast range of possible topics, we will focus here on Pair Programming
+and Code Review at the level of a PR.  Pair programming is working together,
+simultaneously with one person typing and the other providing guidance and
+feedback.  Code Reviews of PRs are usually asynchronous and performed to ensure
+incoming code has a specific purpose and meets quality standards.
+
 ## Mechanics and Methods
 Code review requires two complementary skills: the mechanical actions of performing
 the review through github (or another version control system) and the soft skills
@@ -108,7 +115,7 @@ mechanical drawing or mathematical proof.
 While you are writing code, you are ultimately producing instructions for the
 machine.  You can be terse and uncaring because machines don't have feelings.
 While you are writing reviews, you are providing feedback to a person.  Remember
-they don't know everything you do (and visa versa) and that doesn't reflect on
+they don't know everything you do (and vice versa) and that doesn't reflect on
 their value as a person, their intelligence or even their capabilities.  Maybe
 a PR was made to meet a deadline and there wasn't time to go back and refactor.
 Perhaps you have a decade of experience with python while they picked it up a
